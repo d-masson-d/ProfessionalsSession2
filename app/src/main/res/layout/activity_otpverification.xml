@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".OTPVerification">
+
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="274dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="OTP Verification"
+        android:textColor="#3A3A3A"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Enter the 6 digit numbers sent to your email"
+        android:textColor="@color/A7A7A7"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <EditText
+        android:id="@+id/otpBox1"
+        style="@style/OtpEditTextStyle"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <EditText
+        android:id="@+id/otpBox2"
+        style="@style/OtpEditTextStyle"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/otpBox1"
+        app:layout_constraintEnd_toStartOf="@+id/otpBox3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/otpBox1"
+        app:layout_constraintTop_toTopOf="@+id/otpBox1" />
+
+    <EditText
+        android:id="@+id/otpBox3"
+        style="@style/OtpEditTextStyle"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/otpBox2"
+        app:layout_constraintStart_toEndOf="@+id/otpBox2"
+        app:layout_constraintTop_toTopOf="@+id/otpBox2" />
+
+    <EditText
+        android:id="@+id/otpBox4"
+        style="@style/OtpEditTextStyle"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/otpBox3"
+        app:layout_constraintStart_toEndOf="@+id/otpBox3"
+        app:layout_constraintTop_toTopOf="@+id/otpBox3" />
+
+    <EditText
+        android:id="@+id/otpBox5"
+        style="@style/OtpEditTextStyle"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/otpBox4"
+        app:layout_constraintStart_toEndOf="@+id/otpBox4"
+        app:layout_constraintTop_toTopOf="@+id/otpBox4" />
+
+    <EditText
+        android:id="@+id/otpBox6"
+        style="@style/OtpEditTextStyle"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/otpBox5"
+        app:layout_constraintStart_toEndOf="@+id/otpBox5"
+        app:layout_constraintTop_toTopOf="@+id/otpBox5" />
+
+    <Button
+        android:id="@+id/buttonSetNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/A7A7A7"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Set New Password"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:cornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout11" />
+
+    <GridLayout
+        android:id="@+id/gridLayout11"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otpBox1">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:fontFamily="@font/roboto"
+            android:text="If you didn’t receive code,"
+            android:textColor="@color/A7A7A7"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto"
+            android:text=" resend after 1:00"
+            android:textColor="@color/A7A7A7"
+            android:textSize="14sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="@+id/textView9" />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
